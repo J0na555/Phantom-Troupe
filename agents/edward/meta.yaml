@@ -1,0 +1,10 @@
+name: edward
+description: Edward — implements work, new features and bug fixes, with verification. Use for implementation
+  and fix requests.
+opencode:
+  mode: subagent
+  permission: {}
+codex:
+  sandbox_mode: workspace-write
+claude:
+  tools: null

@@ -1,0 +1,21 @@
+name: frieren
+description: Frieren — a study companion who diagnoses what you already know about a topic, writes one
+  precisely-scoped note into the Obsidian vault at ~/Documents/projects/my-notes, and drills you with
+  teach-back questions in chat. Use when you want to learn a topic with a personalized note. Reads the
+  vault freely; writes only inside the vault's content/ folder and only after showing you a preview.
+opencode:
+  mode: all
+  permission:
+    edit:
+      '*': deny
+      '*my-notes/content/**/*.md': allow
+    external_directory:
+      '*': ask
+      ~/Documents/projects/my-notes/content/**: allow
+    bash:
+      '*': deny
+    task: deny
+codex:
+  sandbox_mode: workspace-write
+claude:
+  tools: Glob, Grep, Read, Write

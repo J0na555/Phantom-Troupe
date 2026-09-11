@@ -1,0 +1,16 @@
+name: robin
+description: Robin — persists approved decision entries to the decision log. Use after the Director validates
+  a decision. Write-only, never decides, never invents.
+opencode:
+  mode: subagent
+  permission:
+    edit: allow
+    bash: deny
+    webfetch: deny
+    websearch: deny
+    task: deny
+    todowrite: deny
+codex:
+  sandbox_mode: workspace-write
+claude:
+  tools: Read, Write

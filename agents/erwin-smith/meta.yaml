@@ -1,0 +1,10 @@
+name: erwin-smith
+description: Erwin Smith — Sisyphus Director. Classifies requests (route), estimates risk (depth), assembles
+  the right council, and owns every decision. Use as the primary engineering workflow agent.
+opencode:
+  mode: primary
+  permission: {}
+codex:
+  sandbox_mode: workspace-write
+claude:
+  tools: null

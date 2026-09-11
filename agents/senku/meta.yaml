@@ -1,0 +1,16 @@
+name: senku
+description: 'Senku — gathers evidence for decisions: codebase facts, documentation, alternatives, deprecations,
+  external sources. Use when a decision depends on unknown or external facts.'
+opencode:
+  mode: subagent
+  permission:
+    edit: deny
+    bash: deny
+    webfetch: allow
+    websearch: allow
+    task: deny
+    todowrite: deny
+codex:
+  sandbox_mode: read-only
+claude:
+  tools: Glob, Grep, Read

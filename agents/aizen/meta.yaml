@@ -1,0 +1,16 @@
+name: aizen
+description: Aizen — challenges assumptions and attacks the draft decision. Use at Council depth, AFTER
+  a proposal exists. Challenges the choice, never validates it.
+opencode:
+  mode: subagent
+  permission:
+    edit: deny
+    bash: deny
+    webfetch: deny
+    websearch: deny
+    task: deny
+    todowrite: deny
+codex:
+  sandbox_mode: read-only
+claude:
+  tools: Glob, Grep, Read

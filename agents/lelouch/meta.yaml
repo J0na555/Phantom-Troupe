@@ -1,0 +1,16 @@
+name: lelouch
+description: Lelouch — proposes architectural designs and implementation options with tradeoffs. Use when
+  a request involves system design, schema, interfaces, or structural decisions.
+opencode:
+  mode: subagent
+  permission:
+    edit: deny
+    bash: deny
+    webfetch: deny
+    websearch: deny
+    task: deny
+    todowrite: deny
+codex:
+  sandbox_mode: read-only
+claude:
+  tools: Glob, Grep, Read

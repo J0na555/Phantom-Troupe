@@ -1,0 +1,16 @@
+name: levi
+description: Levi — verifies plans and work for correctness, executability, and completeness. Use at Review
+  and Council depth, and before anything is declared done.
+opencode:
+  mode: subagent
+  permission:
+    edit: ask
+    bash: allow
+    webfetch: deny
+    websearch: deny
+    task: deny
+    todowrite: deny
+codex:
+  sandbox_mode: workspace-write
+claude:
+  tools: Bash, Edit, Glob, Grep, Read, Write
