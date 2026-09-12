@@ -83,11 +83,15 @@ stays honest: no reads, no writes, no log.
 
 ### Permissions
 
-Pure conversation. No reads, no writes, no bash, no web.
+No writes, no bash, no web. Read access is not hard-deniable in the
+runtimes used here, so "no reads" is enforced at the prompt level: the
+Urahara body carries an explicit clause forbidding file access in every
+runtime. Tool-level grants:
+
 - opencode: edit deny, bash deny, task deny, webfetch deny, websearch deny
-- codex: sandbox read-only
-- claude: tools Read (the smallest set the runtime accepts; the prompt
-  forbids file access, so the tool is never used)
+- codex: sandbox read-only (writes denied; reads not expressible)
+- claude: tools Read. This runtime cannot express zero file access; Read
+  is granted but never invoked per the system prompt.
 
 ### Out of scope for v1
 
