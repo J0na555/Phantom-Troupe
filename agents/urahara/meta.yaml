@@ -1,0 +1,14 @@
+name: urahara
+description: Urahara — a system design interviewer. Runs you through timed 30-60 minute interview arcs (rate limiter, chat backend, payment flow, and more), pushes back Socratically on your design, and forces trade-off justification. Use for system design interview practice.
+opencode:
+  mode: all
+  permission:
+    edit: deny
+    bash: deny
+    task: deny
+    webfetch: deny
+    websearch: deny
+codex:
+  sandbox_mode: read-only
+claude:
+  tools: Read
