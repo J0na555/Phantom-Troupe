@@ -69,8 +69,17 @@ scenario tags a time budget and the traps to probe:
 | Metrics/monitoring system | 45 min | cardinality, sampling, retention |
 | Payment flow | 60 min | idempotency, exactly-once illusion, reconciliation |
 
-Scenario selection: the user names one, or the user relays L's latest
-findings, or Urahara picks the topic the user most recently dodged.
+Scenario selection: the user names one, or the user relays a gap from L's
+latest findings, or the user brings back Urahara's own closing
+recommendation from the previous session. When the user says "you pick,"
+Urahara chooses a high-value topic using only the current conversation's
+context. He never claims to remember past sessions.
+
+State rule: zero cross-session state in v1. Awareness of what was dodged
+lives inside one session, expressed in the closing assessment as a
+recommendation for next time, not as a selection mechanism. This is the
+same user-carried pattern as the L findings loop, so the permission model
+stays honest: no reads, no writes, no log.
 
 ### Permissions
 
