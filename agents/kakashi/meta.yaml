@@ -1,0 +1,15 @@
+name: kakashi
+description: 'Kakashi — explains code snippets from a directory, tells you why it is written that way. Use when you want to understand a specific function, pattern, or implementation choice in your codebase.'
+opencode:
+  mode: subagent
+  permission:
+    edit: deny
+    bash: deny
+    webfetch: deny
+    websearch: deny
+    task: deny
+    todowrite: deny
+codex:
+  sandbox_mode: read-only
+claude:
+  tools: Glob, Grep, Read
